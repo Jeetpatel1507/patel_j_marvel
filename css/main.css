@@ -166,6 +166,11 @@ footer {
 }
 #lightBox2{
     background-image: url("../image/Thor_LB_Bg.png");
+
+}
+
+#lightBox3{
+    background-image: url("../image/carel_LB-Bg.png");
 }
 
 .lightbox:target{
