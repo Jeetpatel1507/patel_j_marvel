@@ -18,7 +18,7 @@ body {
 
 /* style the header */
 header {
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     position: sticky;
     top: 0;
     text-align: center;
@@ -108,4 +108,66 @@ footer {
     background-color: rgb(40, 37, 37);
 
 
+}
+/* light box */
+.lightbox {
+    display: none;
+    width: 100vw; /* viewport width = width of the browser window */
+    height: 100vh;  /* viewport hieght = hieght of the browser window */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    background-repeat: no-repeat;
+
+    background-position: 40px bottom;
+    background-size: 55vh;
+}
+
+.lb_close {
+
+    
+    color: white ;
+    font-size : 2en ;
+
+    text-decoration: none;
+
+    position: relative;
+    top:12px;
+    left:98%;
+    font-weight: bolder;
+
+} 
+
+.lb_close:hover {
+    opacity: 0.5;
+
+}
+
+.lightbox article{
+    width: 55%;
+    margin-left: 40% ;
+    padding-top: 50px;
+}
+
+.lb_text,.lb_heading{ text-align: left; }
+
+.lb_text{ 
+    line-height: 1.6;
+    margin-left: 0 ;
+    padding-top: 2em ;
+}
+
+#lightBox{
+    background-image: url("../image/Cap_LB_Bg.png");
+    
+}
+#lightBox2{
+    background-image: url("../image/Thor_LB_Bg.png");
+}
+
+.lightbox:target{
+    display: block;
 }
